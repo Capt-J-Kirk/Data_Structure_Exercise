@@ -19,7 +19,7 @@ namespace Data_Structure_Exercise
             inputCondition1.DisplayInputConditions();
             do {
                 inputString = Console.ReadLine();
-                inputObject1 = new Input(inputCondition1.inputConditions, inputString, @"^[0-9]+$");
+                inputObject1 = new Input(inputCondition1.inputConditions, inputString, @"^[1-9][0-9]*$");
             }
             while (inputObject1.TestInputSyntax() == false);
             valueCount = short.Parse(inputObject1.inputString);
